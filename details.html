@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>COCOMO 81</title>
+        <img src="cocomologo.png" alt="cocomologo" style="width:304px;height:80px; margin: 5px 100px 0px 0px">
+            <link rel="stylesheet" type="text/css" href="menu.css">
+
+            <div class="topnav" id="myTopnav">
+                <a href="#home">Cocomo Calculator</a>
+                <a class="active" href="#news">Description</a>
+            </div>
+
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js">
+        </script>
+
+
+        <script>
+            $(document).ready(function () {
+                $("#flip").click(function () {
+                    $("#panel").slideToggle("slow");
+                });
+            });
+        </script>
+
+        <script>
+            $(document).ready(function () {
+                $("#flip1").click(function () {
+                    $("#panel1").slideToggle("slow");
+                });
+            });
+        </script>
+
+        <script>
+            $(document).ready(function () {
+                $("#flip2").click(function () {
+                    $("#panel2").slideToggle("slow");
+                });
+            });
+        </script>
+
+        <script>
+            $(document).ready(function () {
+                $("#flip3").click(function () {
+                    $("#panel3").slideToggle("slow");
+                });
+            });
+        </script>
+
+        <script>
+            $(document).ready(function () {
+                $("#flip4").click(function () {
+                    $("#panel4").slideToggle("slow");
+                });
+            });
+        </script>
+
+        <script>
+            $(document).ready(function () {
+                $("#flip5").click(function () {
+                    $("#panel5").slideToggle("slow");
+                });
+            });
+        </script>
+
+        <script>
+            $(document).ready(function () {
+                $("#flip6").click(function () {
+                    $("#panel6").slideToggle("slow");
+                });
+            });
+        </script>
+
+        <script>
+            $(document).ready(function () {
+                $("#flip7").click(function () {
+                    $("#panel7").slideToggle("slow");
+                });
+            });
+        </script>
+
+        <script>
+            $(document).ready(function () {
+                $("#flip8").click(function () {
+                    $("#panel8").slideToggle("slow");
+                });
+            });
+        </script>
+
+        <script>
+            $(document).ready(function () {
+                $("#flip9").click(function () {
+                    $("#panel9").slideToggle("slow");
+                });
+            });
+        </script>
+
+        <script>
+            $(document).ready(function () {
+                $("#flip10").click(function () {
+                    $("#panel10").slideToggle("slow");
+                });
+            });
+        </script>
+
+        <script>
+            $(document).ready(function () {
+                $("#flip11").click(function () {
+                    $("#panel11").slideToggle("slow");
+                });
+            });
+        </script>
+
+        <script>
+            $(document).ready(function () {
+                $("#flip12").click(function () {
+                    $("#panel12").slideToggle("slow");
+                });
+            });
+        </script>
+
+        <script>
+            $(document).ready(function () {
+                $("#flip13").click(function () {
+                    $("#panel13").slideToggle("slow");
+                });
+            });
+        </script>
+
+        <script>
+            $(document).ready(function () {
+                $("#flip14").click(function () {
+                    $("#panel14").slideToggle("slow");
+                });
+            });
+        </script>
+
+    </head>    
+    <div class="std"><div id="footer_page" style="margin: 50px">
+
+            <hr>
+
+            <div id="flip">
+                <p><strong>Required Reliability</strong></p>
+            </div>
+            <div id="panel" style="display: none">
+                <ul>
+                    
+                    This reflects the extent that a software product can be expected to perform its intended functions satisfactorily. The rating can be determined from the list below or from a list of Software Development Activity Differences due to required reliability.
+<li>Very Low: The effect of a software failure is simply the inconvenience incumbent on the developers to fix the fault.</li>
+<li>Low: The effect of a software failure is a low level, easily-recoverable loss to users.</li>
+<li>Nominal: The effect of a software failure is a moderate loss to users, but a situation for which one can recover without extreme penalty.</li>
+<li>High: The effect of a software failure can be a major financial loss or a massive human inconvenience.</li>
+<li>Very High: The effect of a software failure can be the loss of human life.</li>
+<li>Very High: No rating - defaults to Very High.</li>
+                </ul>
+            </div>
+
+            <div id="flip1">
+                <p><strong>Database Size</strong></p>
+            </div>
+            <div id="panel1" style="display: none">
+                <ul>
+                    This is the relative database size to be developed where size refers to the amount of data to be assembled and stored in non-main storage: 
+D/P = (Database size in bytes or characters) / (Program size in SLOC)
+<li>Very Low: No rating - defaults to Low.</li>
+<li>Low: D/P < 10</li>
+<li>Nominal: 10 <= D/P <= 100</li>
+<li>High: 100 <= D/P <= 1000</li>
+<li>Very High: D/P > 1000</li>
+<li>Extra High: No rating - defaults to Very High.</li>
+    </ul>
+            </div>
+
+            <div id="flip2">
+                <p><strong>Product Complexity</strong></p>
+            </div>
+            <div id="panel2" style="display: none">
+                <ul>
+                    Complexity is assessed as the subjective average of four types of control functions: control, computation, device-dependent, or data management operations.
+<br>
+<br>
+Control Operations
+<li>Very Low: Straight-line code with a few non-nested structured programming operations: DOs, CASEs, IF-THEN-ELSEs. Simple predicates.</li>
+<li>Low: Straight forward nesting of structured programming operators. Mostly simple predicates.</li>
+<li>Nominal: Mostly simple nesting. Some intermodule control. Decision tables.</li>
+<li>High: Highly nested structured programming operators with many compound predicates. Queue and stack control. Considerable intermodule control.</li>
+<li>Very High: Reentrant and recursive coding. Fixed-priority interrupt handling.</li>
+<li>Extra High: Multiple resource scheduling with dynamically changing priorities. Microcode-level control.</li>
+
+<br>
+Computational Operations:
+<li>Very Low: Evaluation of simple expressions: e.g. A = B + C x (D - E).</li>
+<li>Low: Evaluation of moderate level expressions, e.g. D = sqrt(B^2 - 4.0 x A x C).</li>
+<li>Nominal: Use of standard math and statistical routines. Basic matrix and vector operations.</li>
+<li>High: Basic numerical analysis: multivariate interpolation, ordinary differential equations. Basic truncation, roundoff concerns.</li>
+<li>Very High: Difficult but structured numerical analysis: near-singular matrix equations, partial differential equations.</li>
+<li>Extra High: Difficult and unstructured numerical analysis: highly accurate analysis of noisy, stochastic data.</li>
+
+<br>
+Device-Dependent Operations
+<li>Very Low: Simple read and write statements with simple formats.</li>
+<li>Low: No cognizance needed of particular processor or I/O device characteristics. I/O done at GET/PUT level. No cognizance of overlap.</li>
+<li>Nominal: I/O processing includes device selection, status checking and error processing.</li>
+<li>High: Operations at the physical I/O level (physical storage address translations; seeks, reads, etc). Optimized I/O overlap.</li>
+<li>Very High: Routines for interrupt diagnosis, servicing, masking. Communication line handling.</li>
+<li>Extra High: Device timing-dependent coding, microprogrammed operations.</li>
+
+<br>
+Data Management Operations
+<li>Very Low: Simple arrays in main memory.</li>
+<li>Low: Single file sub-setting with no data structure changes, no edits, no intermediate files.</li>
+<li>Nominal: Multi-file input and single file output. Simple structural changes, simple edits.</li>
+<li>High: Special purpose subroutines activated by data steam contents. Complex data restructuring at the record level.</li>
+<li>Very High: A generalized, parameter-driven file structuring routine. File building, command processing, search optimization.</li>
+<li>Extra High: Highly coupled, dynamic relational structures. Natural language data management.</li>
+
+                    <li></li>
+                </ul>
+            </div>
+
+
+<hr>
+
+
+            <div id="flip3">
+                <p><strong>Exacution Time Constraint</strong></p>
+            </div>
+            <div id="panel3" style="display: none">
+                <ul>
+This reflects the degree of execution time constraint imposed upon a software product. The rating is expressed in terms of available execution time expected to be used.
+
+<br>
+<li>Very Low: No rating - defaults to Nominal.</li>
+<li>Low: No rating - defaults to Nominal.</li>
+<li>Nominal: <= 50% use of available execution time</li>
+<li>High: 70% use of available execution time</li>
+<li>Very High: 85% use of available execution time</li>
+<li>Extra High: 95% use of available execution time</li>
+                </ul>
+            </div>
+
+            <div id="flip4">
+                <p><strong>Main Storage Constraint</strong></p>
+            </div>
+            <div id="panel4" style="display: none">
+                <ul>
+                    This reflects the percentage of main storage expected to be used by the software product and any subsystems consuming the main storage resources. Main storage refers to direct random access storage such as disks, tapes, or optical drives.
+<br>
+<li>Very Low: No rating - defaults to Nominal.
+<li>Low: No rating - defaults to Nominal.</li>
+<li>Nominal: <= 50% use of available storage</li>
+<li>High: 70% use of available storage</li>
+<li>Very High: 85% use of available storage</li>
+<li>Extra High: 95% use of available storage</li>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="flip5">
+                <p><strong>Virtual Machine Volatiliy</strong></p>
+            </div>
+            <div id="panel5" style="display: none">
+                <ul>
+                    This reflects the level of volatility of the virtual machine underlying the software product to be developed. The virtual machine is defined as the complex of hardware and software the product will call upon to accomplish its tasks. The ratings are defined in terms of the relative frequency of major and minor changes:
+<br>
+Major change:
+significantly affects roughly 10% of routines under development.
+Minor change:
+significantly affects roughly 1% of routines under development.
+
+
+<li>Very Low: No rating - defaults to Low.</li>
+<li>Low: Major change every 12 months</li>
+<li>Nominal: Major change every 6 months; Minor: 2 weeks</li>
+<li>High: Major: 2 months; Minor: 1 week.</li>
+<li>Very High: Major: 2 weeks; Minor: 2 days.</li>
+<li>Extra High: No rating - defaults to Very High.</li>
+                </ul>
+            </div>
+
+            <div id="flip6">
+                <p><strong>Computer Turnaround Time</strong></p>
+            </div>
+            <div id="panel6" style="display: none">
+                <p>For the best online shopping experience, we provide easy and secure payment methods such as:</p>
+                <ul>
+                    This reflects the level of computer response time experienced by the project team developing the software product. The response time is the average time from when the developer submits a job to be run until the results are back in the developer's hands (hey - quit laughing - that was important back then).
+                    <li>Very Low: No rating - defaults to Low.</li>
+<li>Low: Interactive.</li>
+<li>Nominal: Avg turnaround time < 4 hours.</li>
+<li>High: 4 - 12 hours.</li>
+<li>Very High: > 12 hours.</li>
+<li>Extra High: No rating - defaults to Very High</li>
+                </ul>
+            </div>
+<hr>
+            <div id="flip7">
+                <p><strong>Analyst Capability</strong></p>
+            </div>
+            <div id="panel7" style="display: none">
+                <ul>
+
+                    Analysts participate in the development and validation of requirements and preliminary design specifications. They consult on detailed design and code activities. They are heavily involved in integration and test. The ratings for analyst capability are expressed in terms of percentiles with respect to the overall population of software analysts. The major attributes to be considered are ability, efficiency, thoroughness, and the ability to communicate and cooperate. This evaluation should not include experience (that is captured in other factors) and should be based on the capability of the analysts as a team rather than individuals.
+
+
+<li>Very Low: 15th percentile</li>
+<li>Low: 35th percentile</li>
+<li>Nominal: 55th percentile</li>
+<li>High: 75th percentile</li>
+<li>Very High: 90th percentile</li>
+<li>Extra High: No rating - defaults to Very High.</li>
+
+   </ul>
+            </div>
+            <div id="flip8">
+                <p><strong>Applications Experience</strong></p>
+            </div>
+            <div id="panel8" style="display: none">
+                <ul>
+                    This represents the level of equivalent applications experience of the project team developing the software product.
+<li>Very Low: <= 4 month experience.</li>
+<li>Low: 1 year of experience.</li>
+<li>Nominal: 3 years of experience.</li>
+<li>High: 6 years of experience.</li>
+<li>Very High: 12 years of experience</li>
+<li>Extra High: No rating - defaults to Very High.</li>
+
+                </ul>
+            </div>
+
+            <div id="flip9">
+                <p><strong>Programmer Capability</strong></p>
+            </div>
+            <div id="panel9" style="display: none">
+                <ul>
+
+                    This represents the capability of the programmers who will be working on the software product. The ratings are expressed in terms of percentiles with respect to the overall population of programmers. The major factors which should be considered in the rating are ability, efficiency, thoroughness, and the ability to communicate and cooperate. The evaluation should not consider the level of experience of the programmers (it is covered by other factors) and it should be based on the capability of the programmers as a team rather than as individuals.
+<li>Very Low: 15th percentile</li>
+<li>Low: 35th percentile</li>
+<li>Nominal: 55th percentile</li>
+<li>High: 75th percentile</li>
+<li>Very High: 90th percentile</li>
+<li>Extra High: No rating - defaults to Very High.</li>
+              </ul>
+            </div>
+
+            <div id="flip10">
+                <p><strong>Virtual Machine Experience</strong></p>
+            </div>
+            <div id="panel10" style="display: none">
+                <p> <span>Store credit can only be used upon checkout.</span></p>
+                <ul>
+                    This represents the experience the project team with the complex of hardware and software that the software product calls upon to accomplish its tasks, e.g. computer, operating system, and/or database management system (the programming language is not considered as part of the virtual machine).
+<li>Very Low: <= 1 month experience.</li>
+<li>Low: 4 months of experience.</li>
+<li>Nominal: 1 year of experience.</li>
+<li>High: 3 years of experience.</li>
+<li>Very High: No rating - defaults to High.</li>
+<li>Extra High: No rating - defaults to High.</li>
+
+ </ul>
+            </div>
+
+            <div id="flip11">
+                <p><strong>Programming Language Experience</strong></p>
+            </div>
+            <div id="panel11" style="display: none">
+                <ul>
+                    This represents the level of programming language experience of the project team developing the software project. The ratings are defined in terms of the project team's equivalent duration of experience with the programming language to be used.
+<li>Very Low: <= 1 month experience.</li>
+<li>Low: 4 months of experience.</li>
+<li>Nominal: 1 year of experience.</li>
+<li>High: 3 years of experience.</li>
+<li>Very High: No rating - defaults to High.</li>
+<li>Extra High: No rating - defaults to High.</li>
+
+         </ul>
+            </div>
+<hr>
+            <div id="flip12">
+                <p><strong>Modern Programming Practices</strong></p>
+            </div>
+            <div id="panel12" style="display: none">
+                <ul>
+                 This represents the degree to which modern programming practices are used in developing the software. Specific practices included here are:
+1. Top-down requirements analysis and design
+2. Structured design notation
+3. Top-down incremental development
+4. Design and code walkthroughs or inspections
+5. Structured code
+6. Program librarian
+<li>Very Low: No use.</li>
+<li>Low: Beginning use.</li>
+<li>Nominal: Some use.</li>
+<li>High: General use.</li>
+<li>Very High: Routine use.</li>
+<li>Extra High: No rating - defaults to Very High.</li>
+
+    </ul>
+            </div>
+
+                        <div id="flip13">
+                <p><strong>Use of Software Tools</strong></p>
+            </div>
+            <div id="panel13" style="display: none">
+                <ul>
+            This represents the degree to which software tools are used in developing the software product.
+<li>Very Low: Basic tools, e.g. assembler, linker, monitor, debug aids.</li>
+<li>Low: Beginning use of more productive tools, e.g. High-Order Language compiler, macro assembler, source editor, basic library aids, database aids.</li>
+<li>Nominal: Some use tools such as real-time operating systems, database management system, interactive debuggers, interactive source editor.</li>
+<li>High: General use of tools such as virtual operating systems, database design aids, program design language, performance measurement and analysis aids, and program flow and test analyzer.</li>
+<li>Very High: General user of advanced tools such as full programming support library with configuration management aids, integrated documentation system, project control system, extended design tools, automated verification system.</li>
+<li>Extra High: No rating - defaults to Very High.</li>
+            </ul>
+            </div>
+
+
+                        <div id="flip14">
+                <p><strong>Required Development Schedule</strong></p>
+            </div>
+            <div id="panel14" style="display: none">
+                <ul>
+                This represents the level of constraint imposed on the project team developing a software product. Ratings are defined in terms of the percentage of schedule stretch-out or acceleration with respect to a nominal schedule for a project requiring a given amount of effort.
+<li>Very Low: 75% of nominal.</li>
+<li>Low: 85% of nominal.</li>
+<li>Nominal: 100%</li>
+<li>High: 130% of nominal.</li>
+<li>Very High: 160% of nominal.</li>
+<li>Extra High: No rating - defaults to Very High.</li>
+
+
+     </ul>
+            </div>
